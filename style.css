@@ -1,0 +1,172 @@
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            position: relative;
+        }
+
+        #particles-js {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        .menu {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: 280px;
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+            transition: box-shadow 0.3s ease; 
+        }
+
+        
+        .menu:hover {
+            box-shadow: 0px 0px 15px rgba(255, 0, 0, 0.7); 
+            border: 2px solid red; 
+        }
+
+        .status {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .status .indicator {
+            width: 10px;
+            height: 10px;
+            background-color: green;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .time {
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .checkbox-item {
+            display: flex;
+            align-items: center;
+            margin: 8px 0;
+        }
+
+        .checkbox-item label {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .checkbox-item input[type="checkbox"] {
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+            outline: none;
+            margin-right: 10px;
+            position: relative;
+            border: 2px solid #555;
+            border-radius: 50%;
+            background-color: #fff;
+            transition: all 0.3s ease;
+        }
+
+        .checkbox-item input[type="checkbox"]:checked {
+            background-color: #28a745;
+            border-color: #28a745;
+        }
+
+        .checkbox-item input[type="checkbox"]:checked::before {
+            content: '✓';
+            color: #fff;
+            font-size: 16px;
+            font-weight: bold;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .coder {
+            margin-top: 20px;
+            font-style: italic;
+            font-size: 14px;
+            text-align: right;
+            color: #888;
+        }
+
+        
+        .notification {
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #f8f9fa;
+            border: 2px solid #ccc;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            display: none; 
+            z-index: 100;
+        }
+
+        .notification .close-btn {
+            background-color: #ff5733;
+            color: white;
+            font-size: 14px;
+            border: none;
+            padding: 8px 12px;
+            cursor: pointer;
+            border-radius: 5px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        .notification .intro-text {
+            font-size: 14px;
+            color: #333;
+        }
+
+        
+        .loading {
+            display: none;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #3498db;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 2s linear infinite;
+            margin: 0 auto;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .loading-text {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #333;
+        }
+    
